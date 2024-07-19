@@ -1,0 +1,67 @@
+tr:nth-child(even) {
+    background-color: #f4c003;
+}
+
+tr:nth-child(odd) {
+    background-color: transparent;
+}
+body {
+    background-color: rgba(52, 45, 45, 0.987);
+}
+.table{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 420px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(24, 20, 20, 0.987);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    color:white;
+}
+a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  a:hover {
+    background: #f4c003;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #f4c003,
+                0 0 25px #f4c003,
+                0 0 50px #f4c003,
+                0 0 100px #f4c003;
+  }
+  a span {
+    position: absolute;
+    display: block;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+  
+    50%,100% {
+      left: 100%;
+    }
+  }
+  a span:nth-child(1) {
+    bottom: 2px;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f4c003);
+    animation: btn-anim1 2s linear infinite;
+  }
